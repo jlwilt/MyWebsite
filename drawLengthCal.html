@@ -1,0 +1,30 @@
+<html>
+  <head>
+  <style>
+  body {
+  background-color: #191970;
+  color: white;
+  text-align: center;  
+  }
+  </style>
+  </head>
+  <body>
+  <h1>Draw Length Calculator</h1>
+  <p>Please measure your height (in inches), then click the button to prompt the calculator. </p>
+  <button onclick="drawLC()">Click</button>
+  <p id="demo"></p>
+  <script>
+  function drawLC() {
+    var height = prompt("Please enter your height in inches:");
+	if (height != null) {
+	 var drawL = height / 2.5;
+	 document.getElementById("demo").innerHTML =
+    "Your draw length is approximately "  + drawL + " inches long!";	
+	}
+  }	
+  </script>
+  
+  </body>
+
+
+</html>
